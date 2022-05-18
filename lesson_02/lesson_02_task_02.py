@@ -55,7 +55,13 @@ origin_list.reverse()
 print(origin_list)  # чтоб в отладчике не рыться, так быстрее
 
 out_string = ''
+
 for i in origin_list:
-    out_string = out_string + i + ' '
+    if i.isdigit() or i[0] == '+' or i [0] == '-':
+        out_string = out_string + ' ' + i + ''
+    else:
+        out_string = out_string + i + ' '
+
+out_string = out_string.replace('"  ', '"')
 
 print(out_string)
