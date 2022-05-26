@@ -24,14 +24,15 @@ base_dict = {
         'ten': 'десять'
 }
 
+
 def num_translate_adv(word):
     word_from_dict = word.lower()
     russian_word = base_dict.get(word_from_dict)
     if ord(word[0]) == ord(word_from_dict[0]):
-        return print(russian_word)
+        return russian_word
     else:
-        russian_word = russian_word.capitalize()
-        return print(russian_word)
+        return russian_word.capitalize()
 
-num_translate_adv('One')
-num_translate_adv('two')
+
+print(num_translate_adv('One'))
+print(num_translate_adv('two'))

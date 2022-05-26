@@ -26,8 +26,10 @@ base_dict = {
         'ten': 'десять'
     }
 
-def num_translate(word):
-    return print(base_dict.get(word))
 
-num_translate('one')
-num_translate('eleven')
+def num_translate(word):
+    return base_dict.get(word)
+
+
+print(num_translate('one'))
+print(num_translate('eleven'))
