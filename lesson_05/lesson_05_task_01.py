@@ -12,7 +12,7 @@ next(odd_to_15)
 ...StopIteration...
 '''
 
-print('----- Task_02 -----')
+print('----- Task_01 -----')
 
 
 def odd_numbers_generator(max_number):
